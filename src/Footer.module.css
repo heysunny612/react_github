@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 1190px;
+  margin: 40px auto;
+  padding: 40px 16px 8px;
+  border-top: 1px solid #d8dee4;
+}
+
+.footerList {
+  display: flex;
+}
+
+.list {
+  margin: 0 20px;
+}
+
+.link {
+  color: #0969da;
+  font-size: 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+.button {
+  padding: 5px 16px;
+  margin-left: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button svg {
+  position: relative;
+  top: 2px;
+}
+
+.greyBtn {
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #d6d8db;
+}
+
+.greenBtn {
+  background-color: #1f883d;
+  border: 1px solid rgba(31, 35, 40, 0.15);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text {
+  margin-left: 5px;
+}
+.number {
+  margin-left: 5px;
+  background-color: #e5e8e9;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 13px;
+}
