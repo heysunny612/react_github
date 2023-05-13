@@ -25,6 +25,7 @@ button {
   border: 0 none;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 }
 
 ul {

@@ -1,0 +1,16 @@
+.badge {
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 2em;
+  padding: 2px 7px;
+  margin: 0 5px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.badge.red {
+  background-color: rgb(215, 58, 74);
+}
+.badge.blue {
+  background-color: #0969da;
+}

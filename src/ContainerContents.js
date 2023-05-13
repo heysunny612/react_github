@@ -17,9 +17,13 @@ export default function ContainerContents() {
             onChange={(e) => setText(e.target.value)}
           />
         </form>
-        <Button styleName={'greenBtn'} buttonName={'New Issue'} />
+        <Button styleName='greenBtn' buttonName='New Issue' />
       </div>
-      <ListItemLayout className={'top'}>
+
+      <ListItemLayout className='top'>
+        <div className={styles.filterState}>
+          <ButtonStateFilters />
+        </div>
         <div className={styles.filterLists}>
           <span>Author</span>
           <span>Lable</span>
@@ -30,8 +34,42 @@ export default function ContainerContents() {
         </div>
       </ListItemLayout>
       <ListItemLayout>
-        <ListItem />
+        <ListItem badges={[{ color: 'red', title: 'bug' }]} />
       </ListItemLayout>
     </div>
+  );
+}
+
+function ButtonStateFilters() {
+  const [isOpenMode, setIsOpenMode] = useState(true);
+  const openModeDataSize = 1;
+  const closeModeDataSize = 2;
+  return (
+    <>
+      <ButtonStateFilter
+        isOpenMode={isOpenMode}
+        onHandleClick={setIsOpenMode}
+        size={openModeDataSize}
+        state='Open'
+      />
+
+      <ButtonStateFilter
+        isOpenMode={!isOpenMode}
+        onHandleClick={setIsOpenMode}
+        size={closeModeDataSize}
+        state='Closed'
+      />
+    </>
+  );
+}
+
+function ButtonStateFilter({ size, state, isOpenMode, onHandleClick }) {
+  return (
+    <button
+      onClick={() => onHandleClick((isOpenMode) => !isOpenMode)}
+      className={`${styles.textFilter} ${isOpenMode && styles['selected']}`}
+    >
+      {size} {state}
+    </button>
   );
 }

@@ -7,6 +7,8 @@
   align-items: flex-start;
 }
 .wrapper.top {
+  position: relative;
+  justify-content: space-between;
   margin-top: 20px;
   border-radius: 5px 5px 0 0;
   background-color: rgb(246, 248, 250);

@@ -13,13 +13,13 @@ export default function ContainerHeader() {
           <p>Facebook / react </p>
         </div>
         <div className={styles.buttonContainer}>
-          <Button styleName={'greyBtn'} buttonName={'Watch'} number={277}>
+          <Button styleName='greyBtn' buttonName='Watch' number={277}>
             <BsEyeSlash />
           </Button>
-          <Button styleName={'greyBtn'} buttonName={'Fork'} number={457}>
+          <Button styleName='greyBtn' buttonName='Fork' number={457}>
             <GiCheckboxTree />
           </Button>
-          <Button styleName={'greyBtn'} buttonName={'Star'} number={5}>
+          <Button styleName='greyBtn' buttonName='Star' number={5}>
             <BsStar />
           </Button>
         </div>

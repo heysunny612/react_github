@@ -33,3 +33,13 @@
   padding: 0 16px;
   line-height: 21px;
 }
+
+.filterState {
+  position: absolute;
+  left: 50px;
+}
+
+.selected {
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
